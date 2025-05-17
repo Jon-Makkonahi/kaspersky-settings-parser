@@ -19,3 +19,4 @@
  И соответствующих задач, созданных для текущих программ от производителя Kaspersky.
 
  Контроль проводится с помощью сбора информации через OpenApi Kaspersky Security Center
+![image](https://github.com/user-attachments/assets/644daf54-176d-4594-b86a-90702b398bb9)
