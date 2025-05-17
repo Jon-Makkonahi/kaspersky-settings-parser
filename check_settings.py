@@ -7,7 +7,7 @@ from datetime import datetime
 
 import urllib3
 import requests
-# import getpass
+import getpass
 
 from reader_file_settings import all_settings_and_object_with_type
 from writers import (
@@ -52,10 +52,8 @@ INHERITED = {True: 'Унаследована', False: 'Не унаследова
 
 def start_session() -> str:
     """Функция авторизации на сервере администрирования KSC."""
-    # login = input('Введите логин\n')
-    login = 'Администратор'
-    # password = getpass.getpass('Введите пароль\n')
-    password = 'Admin123'
+    login = input('Введите логин\n')
+    password = getpass.getpass('Введите пароль\n')
     user64 = base64.b64encode(login.encode('utf-8')).decode("utf-8")
     password64 = base64.b64encode(password.encode('utf-8')).decode("utf-8")
     headers: dict = {
